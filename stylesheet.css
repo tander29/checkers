@@ -1,0 +1,41 @@
+h1 {
+    color: blue;
+}
+
+
+section {
+    width: 60vh;
+    height: 8vh;
+    display: flex;
+    box-sizing: border-box;
+    /* pointer-events: none; */
+}
+
+article {
+    box-sizing: border-box;
+    width: 12.5%;
+    height: 100%;
+    border: 1pt goldenrod solid;
+    background-color: darkred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.checker{
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    border: 2pt goldenrod solid;
+    pointer-events: none;
+}
+.black {
+    background-color: black; 
+    
+}
+.red {
+    background-color:red; 
+    
+}
