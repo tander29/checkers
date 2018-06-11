@@ -2,6 +2,7 @@
 
 function CheckerPiece (color) {
     this.color = color
+    this.squareOfOrigin = null
     // this.createChecker()
 //    return this.createChecker()
 
@@ -9,9 +10,10 @@ function CheckerPiece (color) {
 }
 
 CheckerPiece.prototype.createChecker = function () {
-    let checkerPiece = document.createElement("div")
-    checkerPiece.classList.add(this.color, 'checker')
-    return checkerPiece
+    this.element = document.createElement("div")
+    this.element.classList.add(this.color, 'checker')
+    this.element.thisChecker = this
+    return this.element
 }
 
   //first attempt--I don't like that when creating a piece it must always have a parent, I want other forces to dictate is position

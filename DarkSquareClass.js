@@ -10,6 +10,7 @@ DarkSquareClass.prototype.constructor = DarkSquareClass
 
 DarkSquareClass.prototype.changeColor = function () {
     this.element.classList.add("black")
+    //ID is not used anywhere currently, but this idea can be useful for chess
     this.newID = "" + this.rowIndex + this.colIndex
     this.element.setAttribute("id", this.newID )
 }

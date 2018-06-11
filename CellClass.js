@@ -13,3 +13,4 @@ Cell.prototype.createCell = function () {
     this.element.dataset.col = this.colIndex;
     this.parent.appendChild(this.element);
 }
+
